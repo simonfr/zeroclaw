@@ -80,6 +80,8 @@ If you run Option B outside a repository checkout, the install script automatica
 
 ### Containerized onboarding (Docker)
 
+For complete Docker setup options, including background services using Docker Compose, see the [Docker Setup Guide](docker-setup.md).
+
 ```bash
 ./install.sh --docker
 ```

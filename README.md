@@ -287,6 +287,18 @@ Remote one-liner (review first in security-sensitive environments):
 curl -fsSL https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/master/install.sh | bash
 ```
 
+### Docker Compose
+For persistent background services, you can also use `docker-compose.yml`. For more details on Docker setup options, see the [Docker Setup Guide](docs/setup-guides/docker-setup.md).
+
+```bash
+# Clone the repository
+git clone https://github.com/zeroclaw-labs/zeroclaw.git
+cd zeroclaw
+
+# Start the gateway service
+API_KEY="sk-..." docker compose up -d
+```
+
 Details: [`docs/setup-guides/one-click-bootstrap.md`](docs/setup-guides/one-click-bootstrap.md) (toolchain mode may request `sudo` for system packages).
 
 ### Pre-built binaries
